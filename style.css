@@ -540,3 +540,43 @@ body{
     width:118px;
   }
 }
+
+
+/* =========================================================
+   2026-09-02 18:25 requested fixes
+========================================================= */
+
+/* POINT03: smartphone should remain fully visible at existing card size */
+.point-photo-phone{
+  width:100%;
+  height:150px;
+  object-fit:contain!important;
+  object-position:center;
+  background:#f7f9fc;
+  padding:4px 0;
+}
+
+/* LINE consultation: photo block removed, tighten space naturally */
+.chat-section .section-head{
+  margin-bottom:24px;
+}
+.chat-section .chat-box{
+  margin-top:0;
+}
+
+/* FLOW requested white emphasis */
+.flow-section .flow-step-white{
+  color:#fff!important;
+  -webkit-text-fill-color:#fff!important;
+}
+
+/* prevent generic section heading overrides from turning it blue */
+.section-head.white h2 .flow-step-white{
+  color:#fff!important;
+}
+
+@media(max-width:480px){
+  .point-photo-phone{
+    height:145px;
+  }
+}
