@@ -23,3 +23,330 @@
     object-fit:contain;
   }
 }
+
+
+/* =========================================================
+   v4: PCでもモバイル版レイアウトを使用
+   LP本体を中央に固定表示
+========================================================= */
+
+html{
+  background:#e9eef5;
+}
+
+body{
+  width:100%;
+  min-height:100vh;
+  margin:0;
+  background:#e9eef5;
+  overflow-x:hidden;
+}
+
+/* LP全体をスマホ幅で中央表示 */
+.topbar,
+main,
+footer{
+  width:100%;
+  max-width:480px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+main,
+footer{
+  background:#fff;
+}
+
+/* ヘッダーも中央のスマホ幅に固定 */
+.topbar{
+  left:auto;
+  right:auto;
+}
+
+.topbar-inner{
+  width:calc(100% - 28px);
+  height:61px;
+}
+
+/* 中身も常にモバイル用の余白 */
+.container{
+  width:calc(100% - 28px);
+  max-width:none;
+}
+
+/* TOP画像 */
+.hero-image-section{
+  width:100%;
+  max-width:480px;
+  margin:0 auto;
+  overflow:hidden;
+  background:#dff3ff;
+}
+
+.hero-main-image{
+  width:100%;
+  height:auto;
+  display:block;
+}
+
+/* 全セクションをモバイル版の密度へ */
+.section{
+  padding:65px 0;
+}
+
+.section-head{
+  margin-bottom:32px;
+}
+
+.section-head h2{
+  font-size:30px;
+}
+
+.section-head p{
+  font-size:13px;
+}
+
+/* すべて1カラム化 */
+.point-grid,
+.job-grid,
+.flow-grid{
+  grid-template-columns:1fr;
+}
+
+.support-main{
+  grid-template-columns:1fr;
+  min-height:440px;
+}
+
+.support-photo{
+  min-height:240px;
+}
+
+.support-copy{
+  padding:28px;
+}
+
+.support-grid{
+  grid-template-columns:repeat(2,1fr);
+}
+
+.job-photo{
+  height:205px;
+}
+
+/* CTA */
+.hero-line,
+.final-cta a{
+  width:100%;
+  min-width:0;
+  font-size:17px;
+}
+
+.mid-cta{
+  width:100%;
+  padding:22px 18px;
+}
+
+.mid-cta a{
+  display:block;
+  width:100%;
+  padding:13px 12px;
+}
+
+/* FAQ */
+.faq-item button{
+  font-size:13px;
+}
+
+/* フッター */
+footer{
+  padding-bottom:95px;
+}
+
+/* PCでも下部固定CTAを表示し、LP幅中央に固定 */
+.fixed-line{
+  display:block;
+  position:fixed;
+  z-index:999;
+  left:50%;
+  right:auto;
+  bottom:0;
+  width:100%;
+  max-width:480px;
+  transform:translateX(-50%);
+  padding:8px 10px calc(8px + env(safe-area-inset-bottom));
+  background:rgba(255,255,255,.96);
+  box-shadow:0 -5px 20px rgba(0,0,0,.13);
+}
+
+.fixed-line a{
+  display:block;
+  background:#10bd59;
+  color:#fff;
+  text-align:center;
+  padding:14px;
+  border-radius:10px;
+  font-weight:900;
+}
+
+/* PCの左右余白をLPと区別 */
+@media (min-width:481px){
+  .topbar,
+  main,
+  footer{
+    box-shadow:0 0 28px rgba(20,48,85,.12);
+  }
+
+  .topbar{
+    box-shadow:0 4px 18px rgba(20,48,85,.12);
+  }
+}
+
+/* 小さいスマホ */
+@media (max-width:360px){
+  .brand{
+    font-size:15px;
+  }
+
+  .top-line{
+    font-size:9px;
+    padding:8px 9px;
+  }
+
+  .support-grid{
+    grid-template-columns:1fr;
+  }
+}
+
+
+/* =========================================================
+   v5: 写真素材を大幅追加
+========================================================= */
+
+.point-card{
+  padding:0 0 26px;
+  overflow:hidden;
+}
+.point-card > b,
+.point-card > .point-icon,
+.point-card > h3,
+.point-card > p{
+  margin-left:20px;
+  margin-right:20px;
+}
+.point-photo{
+  width:100%;
+  height:150px;
+  display:block;
+  object-fit:cover;
+  margin-bottom:18px;
+}
+.point-card > b{
+  display:block;
+}
+.point-icon{
+  margin-top:8px!important;
+}
+
+.job-photo{
+  width:100%;
+  height:205px;
+  display:block;
+  object-fit:cover;
+}
+
+.support-photo{
+  width:100%;
+  height:240px;
+  min-height:240px;
+  display:block;
+  object-fit:cover;
+}
+
+.support-item{
+  padding:0 0 18px;
+  overflow:hidden;
+}
+.support-item img{
+  width:100%;
+  height:100px;
+  display:block;
+  object-fit:cover;
+  margin-bottom:12px;
+}
+.support-item b,
+.support-item span,
+.support-item h3,
+.support-item p{
+  margin-left:12px;
+  margin-right:12px;
+}
+
+.content-photo{
+  position:relative;
+  max-width:650px;
+  margin:0 auto 18px;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 10px 28px rgba(0,35,86,.10);
+}
+.content-photo img{
+  width:100%;
+  height:240px;
+  display:block;
+  object-fit:cover;
+}
+.content-photo-label{
+  position:absolute;
+  left:12px;
+  right:12px;
+  bottom:12px;
+  padding:11px 12px;
+  border-radius:10px;
+  background:rgba(4,43,92,.88);
+  color:#fff;
+  font-size:14px;
+  font-weight:900;
+  text-align:center;
+}
+
+.flow-visual{
+  position:relative;
+  margin:0 0 20px;
+  border-radius:18px;
+  overflow:hidden;
+  background:#fff;
+  color:#10223c;
+}
+.flow-visual img{
+  width:100%;
+  height:210px;
+  display:block;
+  object-fit:cover;
+}
+.flow-visual div{
+  padding:16px 18px 18px;
+}
+.flow-visual small{
+  display:block;
+  color:#0864ca;
+  font-weight:900;
+  letter-spacing:.1em;
+}
+.flow-visual strong{
+  display:block;
+  font-size:17px;
+  line-height:1.45;
+}
+
+.photo-credit{
+  margin-top:5px;
+  opacity:.75;
+}
+
+@media(max-width:480px){
+  .point-photo{height:145px}
+  .content-photo img{height:220px}
+  .flow-visual img{height:190px}
+  .support-item img{height:90px}
+}
