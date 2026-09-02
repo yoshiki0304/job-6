@@ -80,3 +80,8 @@ LP内の写真は https://yoshiki0304.github.io/job-2/ で実際に使われて�
 - LINE相談例直下のスマホ写真枠を削除
 - 削除箇所の余白を詰めて調整
 - FLOW「かんたん3STEP」を白文字に固定
+
+## Job photo URL correction
+前回 .png で誤指定していたjob-2画像を、実在する .webp URLへ修正。
+- 電子部品の組立・検査: job-02-electronics.webp
+- 機械オペレーター: job-03-machine.webp
