@@ -358,3 +358,46 @@ footer{
 .job-body p{
   line-height:1.65;
 }
+
+
+/* =========================================================
+   v7: 人物写真をTOP以外で使用しない / 絵文字を全面撤去
+========================================================= */
+
+.svg-icon{
+  width:42px;
+  height:42px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  color:#0864ca;
+}
+.svg-icon svg{
+  width:100%;
+  height:100%;
+  fill:none;
+  stroke:currentColor;
+  stroke-width:3;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+.point-icon{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:0!important;
+}
+.point-icon .svg-icon{
+  width:44px;
+  height:44px;
+}
+.support-item > .svg-icon{
+  display:flex;
+  width:38px;
+  height:38px;
+  margin:7px auto 3px;
+}
+.support-item > span.svg-icon{
+  margin-left:auto!important;
+  margin-right:auto!important;
+}
