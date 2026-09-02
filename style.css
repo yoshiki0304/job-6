@@ -435,3 +435,108 @@ footer{
   color:#6c788b;
   font-size:12px;
 }
+
+
+/* =========================================================
+   Light-blue brand update
+========================================================= */
+:root{
+  --brand-light:#dff3ff;
+  --brand-blue:#63b9ec;
+  --brand-blue-strong:#429fdc;
+  --brand-blue-deep:#246f9e;
+}
+
+html,
+body{
+  background:#eaf7ff;
+}
+
+.topbar{
+  background:#fafdff;
+  border-bottom:1px solid #cfeeff;
+}
+
+.brand-image{
+  display:flex;
+  align-items:center;
+  width:164px;
+  height:52px;
+}
+.brand-image img{
+  display:block;
+  width:100%;
+  height:auto;
+  max-height:50px;
+  object-fit:contain;
+}
+
+.section-head>span,
+.section-head h2 strong,
+.support-extra small,
+.flow-card small{
+  color:var(--brand-blue-strong)!important;
+}
+
+.mid-cta{
+  background:linear-gradient(135deg,#8ed0f4,#5eb3e6)!important;
+}
+
+.branded-cta{
+  position:relative;
+  overflow:hidden;
+  padding-top:74px!important;
+}
+.cta-brand-logo{
+  position:absolute;
+  top:12px;
+  left:50%;
+  transform:translateX(-50%);
+  width:128px;
+  height:auto;
+  border-radius:12px;
+  background:rgba(255,255,255,.92);
+  padding:4px 8px;
+}
+
+.flow-section,
+.final-cta{
+  background:linear-gradient(135deg,#75c4ef,#3e9edb)!important;
+}
+
+.final-brand-logo{
+  display:block;
+  width:180px;
+  max-width:60%;
+  margin:0 auto 18px;
+  padding:7px 12px;
+  border-radius:14px;
+  background:rgba(255,255,255,.94);
+}
+
+.footer-brand-logo{
+  display:block;
+  width:150px;
+  max-width:55%;
+  height:auto;
+  margin:0 auto 12px;
+  padding:6px 10px;
+  border-radius:12px;
+  background:#fff;
+}
+
+.fixed-line{
+  border-top:1px solid #cceeff;
+}
+
+@media(max-width:480px){
+  .brand-image{
+    width:145px;
+  }
+  .brand-image img{
+    max-height:46px;
+  }
+  .cta-brand-logo{
+    width:118px;
+  }
+}
