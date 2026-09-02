@@ -50,3 +50,16 @@ TOPファーストビューを提供画像 `assets/top-hero.png` に差し替え
 - LP内の絵文字を全面削除
 - 絵文字部分をオリジナルSVGラインイラストへ変更
 - 写真とカード文言の内容を再度一致させた
+
+## job-2画像差し替え版
+LP内の写真は https://yoshiki0304.github.io/job-2/ で実際に使われている以下の画像へ変更しています。
+- benefit-01-money.png
+- benefit-02-room.png
+- benefit-03-bento.png
+- benefit-04-ticket.png
+- benefit-05-phone.png
+- job-01-factory.png
+- job-02-electronics.png
+- job-03-machine.png
+
+求人カードの文言も写真内容に合わせて変更済みです。

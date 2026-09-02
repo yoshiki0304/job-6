@@ -401,3 +401,37 @@ footer{
   margin-left:auto!important;
   margin-right:auto!important;
 }
+
+
+/* v8: job-2で実際に使用している写真素材へ統一 */
+.support-extra{
+  margin-top:20px;
+  overflow:hidden;
+  border:1px solid #dce6f0;
+  border-radius:16px;
+  background:#fff;
+  box-shadow:0 8px 22px rgba(0,35,86,.06);
+}
+.support-extra img{
+  display:block;
+  width:100%;
+  height:210px;
+  object-fit:cover;
+}
+.support-extra div{
+  padding:18px 20px 21px;
+}
+.support-extra small{
+  color:#0864ca;
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:.1em;
+}
+.support-extra h3{
+  margin:4px 0;
+  font-size:19px;
+}
+.support-extra p{
+  color:#6c788b;
+  font-size:12px;
+}
